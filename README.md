@@ -62,32 +62,101 @@ Contém uma chave pública e outra privada
 ### **Primeiros comandos com o Git**
 
 - Para criar um diretório: `mkdir nome da pasta` ;
+
 - para acessar a pasta: `cd nome-da-pasat/ tabe para completar`;
+
 - para limpara o terminal: `ctrl l` ;
+
 - para transformar em um diretório git: `git: -g init`;
+
 - `git clone pasta a ser clonada`;
+
 - para alterar o nome das pasta: `git clone pasta a ser clonada mesmo comando e passa o novo nome`;
+
 - `git status`;
+
 - Adicionar novos conteúdos ao projeto: `git add.` ;
-- Criar um commit: `git commit`;
+
+- Criar um commit: `git commit -m`;
+
 - fleg: `ls -a` ---> lista de arquivos ocultos
+
 - `cat config`: para verificar conteúdo;
+
 - `git remote -v`;
+
 - `cd..` para voltar uma pasta;
+
 - para conectar com dispositivo remoto: git remote add origin link do repossitório;
+
 - para clonar uma Branche especifica : `git clone url —branch nome da branche —single-branch`;
+
 - para criar um arquivo vazio: toch [README.md](http://readme.md/);
+
 - para inserir código `git init`
+
 - para mandar um projeto  `git add origin passata go github`
+
 - para mandar um projeto  `git remote set-url passata go github`
+
 - para mandar um projeto  `git remote set-url origin https:  set-url passar do github`
+
 - para mandar um projeto  `git push origin master`
+
 - para mandar um projeto  `git pull origin master`
 
-## **RESOLVENDO CONFLITOS**
+- para verificar para onde o commit está apontando `` git log``
+
+- criando ponteiro ``echo "commit-1-branch-main"`> commit-1-branch-main.text
+
+  (``git add .``  + ``git commit -m "nome no commit"``)para criar a branch teste: `` git checkout -b teste`` troca da branch que tá para nova
+
+  para voltar na branch main ``git checkout -b main``
+
+  para lista  os últimos commits branch : ``git branch  -v``
+
+  para que os commts da branch  teste apareça na branch main, precisa ser mesclada:   ` git marge teste` (branch  que vai ser mesclada com o main)
+
+  não vamos mais utilizar a branch teste precisa exclui-lá -> ``git branch ``para listas -->
+
+  para excluir ``git branch  -d teste`` --> para enviar para repositorio ou conectando com o local.
+
+  
+
+  ## CONFLITOS DE MERGE
+
+  - ``git log`` para verificar para onde está apontando  volta no git  --> {``git add .`` + ``git commit -m "nome do novo commit" --> git push origin main --> git pull faz a alteração necessária e git add . + novo commit -m "novo commit" + git push(para enviar as auterações para o repositório)``
+
+  - Comando para  baixar alterações do repositório e não vai mesclar `` git fetch origin main``
+  - para ver a diferença da branch main com a mater `` git diff main orinrin/main``
+  - para trazer as alterações do git remoto para o repositório local depois do comando acima``git marge origin;main``
+  - para clona apenas uma branch ``git clone "link do repositório" --branch teste --single-b branch``   para ficar separado``git stash`` ``git stash list``
+  - para voltar para outra branch ``git checkout -b  teste-
+
+  2``   git checkout teste``
+
+  - para adicionar novo e excluir o antigo  ``git stash pop`` ou`` git stash apply``  
+
+  
+
+##   **RESOLVENDO CONFLITOS**
 
 - Quando o código está diferente ao que está no GitHub: Será necessário clonar o condigo do Git e modificar para o arquivo correto.
 - `Git pull origin master` (para puxar o arquivo alterado no github). conflito de linha. terá que corrigir o conteúdo diferente.
 - `git add *` **-->** commit -m na atualização realizada --> `git push origin master`.
+
+
+
+###  **BRANCHES**
+
+main -> commit 0 -> commit 1 -> commit 3 - >(teste)
+
+
+
+
+
+
+
+
 
 ### **Fonte: Aula Git e GitHub da DIO**
