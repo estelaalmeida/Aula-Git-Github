@@ -59,68 +59,127 @@ Contém uma chave pública e outra privada
 
 ## **INICIANDO O GIT E CRIANDO UM COMMIT**
 
-### **Primeiros comandos com o Git**
+### **Comandos Git**
 
-- Para criar um diretório: `mkdir nome da pasta` ;
+- Adiciona um repositório remoto com um nome específico:
+        ``git remote add [nome-remoto] [URL]``
 
-- para acessar a pasta: `cd nome-da-pasat/ tabe para completar`;
+- Utiliza para  efetuar push das alterações  locais para o repositório online:
+        ``git pusnh add origin main``
 
-- para limpara o terminal: `ctrl l` ;
+- Para recuperar as útimas alterações  do repositórios remoto,mas não faz merge automático:
+    	  ``git fetch``
+  
+- Desfaz as alterações  no arquivo especifico, removendo-o do ídice:
+        ``git reset [arquivo]``
+  
+- Remve um arquivo do repositório e o incluí no próximo commit:
+        ``git rm [arquivo]``
+  
+- Mostra as diferenças entre as alterações que não foram adicionado ao índice:
+          ``git diff``
 
-- para transformar em um diretório git: `git: -g init`;
+- Para criar um diretório:
+          `mkdir nome da pasta`
 
-- `git clone pasta a ser clonada`;
+- Para acessar a pasta:
+          `cd nome-da-pasat/ tabe para completar`
 
-- para alterar o nome das pasta: `git clone pasta a ser clonada mesmo comando e passa o novo nome`;
+- Para limpara o terminal:
+          `ctrl l` 
 
-- `git status`;
+- Para transformar em um diretório git:
+          `git: -g init`
+  
+- Para clonar um repositório:
+          `git clone pasta a ser clonada`
+  
+- Para alterar o nome das pasta:
+          `git clone pasta a ser clonada mesmo comando e passa o novo nome`
+  
+- Para verificar o andamento do projeto no git:
+          `git status`
 
-- Adicionar novos conteúdos ao projeto: `git add.` ;
+- Adicionar novos conteúdos ao projeto:
+          `git add.`
 
-- Criar um commit: `git commit -m`;
+- Criar um commit:
+          `git commit -m`
 
-- fleg: `ls -a` ---> lista de arquivos ocultos
+- lista de arquivos ocultos:
+          fleg: `ls -a`
 
-- `cat config`: para verificar conteúdo;
+-Para verificar conteúdo;
+          `cat config` 
 
-- `git remote -v`;
+-Para voltar uma pasta: 
+          `cd..`
 
-- `cd..` para voltar uma pasta;
+- Para conectar com dispositivo remoto:
+          ``git remote add origin link do repossitório``
 
-- para conectar com dispositivo remoto: git remote add origin link do repossitório;
+- Para clonar uma Branche especifica:
+          `git clone url —branch nome da branche —single-branch`
 
-- para clonar uma Branche especifica : `git clone url —branch nome da branche —single-branch`;
+- Para criar um arquivo vazio:
+          ``toch [README.md](http://readme.md/)``
 
-- para criar um arquivo vazio: toch [README.md](http://readme.md/);
+- Para inserir código:
+           `git init`
 
-- para inserir código `git init`
+- Para mandar um projeto:
+            `git add origin passata go github`
 
-- para mandar um projeto  `git add origin passata go github`
+- Para mandar um projeto:
+            `git remote set-url passata go github`
 
-- para mandar um projeto  `git remote set-url passata go github`
+- Para mandar um projeto:
+            `git remote set-url origin https:  set-url passar do github`
 
-- para mandar um projeto  `git remote set-url origin https:  set-url passar do github`
+- Para enviar commits do repositório local para o remoto:
+            `git push origin master`
 
-- para mandar um projeto  `git push origin master`
+- Para atualizar o repositório local com o remoto:
+            `git pull origin master`
 
-- para mandar um projeto  `git pull origin master`
+- Para verificar para onde o commit está apontando e lista-los:
+            ``git log``
+  
+- Para listar todas as branches locais e destaca a branch atual:
+            ``git branch``
+  
+- Para criar uma nova branch(UTILIZADO QUANDO FAZEMOS ALTERAÇÕESSEM AFETAR A BRANCH ORIGINAL:
+          ``git branch [nome-da-branch]``
+  
+- Para alterar para um branch específica:
+          ``git checkout [nome-da-branch]``.
+  
+- Para combinar  as alterções  de uma branch para uma branch atual:
+          ``git merge [branch]``
+  
+- Para listar os repositórios remotos configurados:
+          `git remote -v``
 
-- para verificar para onde o commit está apontando `` git log``
+- Criando ponteiro:
+          ``echo "commit-1-branch-main"`> commit-1-branch-main.text
 
-- criando ponteiro ``echo "commit-1-branch-main"`> commit-1-branch-main.text
+              (``git add .``  + ``git commit -m "nome no commit"``)para criar a branch teste: `` git checkout -b teste`` troca da branch que tá para nova
 
-  (``git add .``  + ``git commit -m "nome no commit"``)para criar a branch teste: `` git checkout -b teste`` troca da branch que tá para nova
+- Para voltar na branch main:
+          ``git checkout -b main``
 
-  para voltar na branch main ``git checkout -b main``
+- Para lista  os últimos commits branch :
+          ``git branch  -v``
 
-  para lista  os últimos commits branch : ``git branch  -v``
+  Para que os commts da branch  teste apareça na branch main, precisa ser mesclada:
+          `git marge teste` (branch  que vai ser mesclada com o main)
 
-  para que os commts da branch  teste apareça na branch main, precisa ser mesclada:   ` git marge teste` (branch  que vai ser mesclada com o main)
+  Não vamos mais utilizar a branch teste precisa exclui-lá:
+         ``git branch ``para listas -->
 
-  não vamos mais utilizar a branch teste precisa exclui-lá -> ``git branch ``para listas -->
-
-  para excluir ``git branch  -d teste`` --> para enviar para repositorio ou conectando com o local.
-
+  Para excluir:
+          ``git branch  -d teste`` --> para enviar para repositorio ou conectando com o local.
+  
   
 
   ## CONFLITOS DE MERGE
