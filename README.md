@@ -1,7 +1,6 @@
-# **DIO | Resumo Git e GitHub**
+# **DIO |  Git e GitHub**
 
-Repositório para armazenar resumos sobre Git e GitHub, do Bootcamp Santander 2023.
-
+Repositório para armazenar resumos sobre Git e GitHub
 Aprendendo a vercionar códigos  com Git e  GitHub.[Digital Innovation One (https://web.dio.me/c)]
 
 ## **📕Documentação**
